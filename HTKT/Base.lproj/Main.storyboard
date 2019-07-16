@@ -149,6 +149,9 @@
                                         <state key="normal" title="Đăng Nhập">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="LogInPressed:" destination="6Bu-ZY-z0q" eventType="touchUpInside" id="4a6-EO-agE"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật Khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RQa-aB-m5Z">
                                         <rect key="frame" x="0.0" y="45" width="285" height="30"/>
@@ -186,6 +189,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="Rkd-M9-l5D"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="99O-18-th4" id="JRc-kw-7FA"/>
+                        <outlet property="passwordTextfield" destination="RQa-aB-m5Z" id="CbW-JE-GWc"/>
                         <segue destination="dka-mP-q1r" kind="show" identifier="goToHome" id="PJA-q5-ZYh"/>
                     </connections>
                 </viewController>
@@ -320,6 +325,6 @@
         <image name="background2" width="1920" height="1276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="acn-VQ-P6c"/>
+        <segue reference="PJA-q5-ZYh"/>
     </inferredMetricsTieBreakers>
 </document>
