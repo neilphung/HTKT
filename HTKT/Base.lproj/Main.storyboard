@@ -266,6 +266,9 @@
                                         <state key="normal" title="Đăng Ký">
                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="y18-t7-5BU" eventType="touchUpInside" id="HDd-2F-qR8"/>
+                                        </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mật Khẩu" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OTq-KC-Wf7">
                                         <rect key="frame" x="0.0" y="45" width="285" height="30"/>
@@ -302,6 +305,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="1DY-JT-9Ne"/>
                     <connections>
+                        <outlet property="emailTextfield" destination="PN0-nU-x7l" id="EHb-JM-Meg"/>
+                        <outlet property="passwordTextfield" destination="OTq-KC-Wf7" id="Cu0-Pg-7dw"/>
                         <segue destination="dka-mP-q1r" kind="show" identifier="goToHome" id="acn-VQ-P6c"/>
                     </connections>
                 </viewController>
@@ -315,6 +320,6 @@
         <image name="background2" width="1920" height="1276"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="PJA-q5-ZYh"/>
+        <segue reference="acn-VQ-P6c"/>
     </inferredMetricsTieBreakers>
 </document>
