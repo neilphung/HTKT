@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A53A8F3AE98CCD834EDA6B9E /* Pods_HTKT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9517640EF930045F0854174B /* Pods_HTKT.framework */; };
 		BD42880922DCAF040002A78C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42880822DCAF040002A78C /* AppDelegate.swift */; };
 		BD42880E22DCAF040002A78C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BD42880C22DCAF040002A78C /* Main.storyboard */; };
 		BD42881022DCAF060002A78C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BD42880F22DCAF060002A78C /* Assets.xcassets */; };
@@ -15,9 +16,12 @@
 		BD42881D22DCBD490002A78C /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42881C22DCBD490002A78C /* LogInViewController.swift */; };
 		BD42881F22DCBD8A0002A78C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42881E22DCBD8A0002A78C /* RegisterViewController.swift */; };
 		BD42882122DCBDA80002A78C /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD42882022DCBDA80002A78C /* WelcomeViewController.swift */; };
+		BDF0512322DD5BD7001AA503 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BDF0512222DD5BD7001AA503 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0EEDAD347645A98DD1452750 /* Pods-HTKT.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTKT.release.xcconfig"; path = "Target Support Files/Pods-HTKT/Pods-HTKT.release.xcconfig"; sourceTree = "<group>"; };
+		9517640EF930045F0854174B /* Pods_HTKT.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HTKT.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD42880522DCAF040002A78C /* HTKT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HTKT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BD42880822DCAF040002A78C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BD42880D22DCAF040002A78C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -28,6 +32,8 @@
 		BD42881C22DCBD490002A78C /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		BD42881E22DCBD8A0002A78C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		BD42882022DCBDA80002A78C /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		BDF0512222DD5BD7001AA503 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0764F19344A1C8419B0EFC3 /* Pods-HTKT.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HTKT.debug.xcconfig"; path = "Target Support Files/Pods-HTKT/Pods-HTKT.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +41,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A53A8F3AE98CCD834EDA6B9E /* Pods_HTKT.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74793831E849FB43D3A4F044 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F0764F19344A1C8419B0EFC3 /* Pods-HTKT.debug.xcconfig */,
+				0EEDAD347645A98DD1452750 /* Pods-HTKT.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BD4287FC22DCAF040002A78C = {
 			isa = PBXGroup;
 			children = (
 				BD42880722DCAF040002A78C /* HTKT */,
 				BD42880622DCAF040002A78C /* Products */,
+				74793831E849FB43D3A4F044 /* Pods */,
+				DD25F0DAB14ADC8B1F5C0470 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 				BD42880F22DCAF060002A78C /* Assets.xcassets */,
 				BD42881122DCAF060002A78C /* LaunchScreen.storyboard */,
 				BD42881422DCAF060002A78C /* Info.plist */,
+				BDF0512222DD5BD7001AA503 /* GoogleService-Info.plist */,
 			);
 			path = HTKT;
 			sourceTree = "<group>";
@@ -81,6 +101,14 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DD25F0DAB14ADC8B1F5C0470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9517640EF930045F0854174B /* Pods_HTKT.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -88,9 +116,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BD42881722DCAF060002A78C /* Build configuration list for PBXNativeTarget "HTKT" */;
 			buildPhases = (
+				CC5073E6A87B03FD1EC87961 /* [CP] Check Pods Manifest.lock */,
 				BD42880122DCAF040002A78C /* Sources */,
 				BD42880222DCAF040002A78C /* Frameworks */,
 				BD42880322DCAF040002A78C /* Resources */,
+				64C1786D42B253D1F44D786E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -140,12 +170,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD42881322DCAF060002A78C /* LaunchScreen.storyboard in Resources */,
+				BDF0512322DD5BD7001AA503 /* GoogleService-Info.plist in Resources */,
 				BD42881022DCAF060002A78C /* Assets.xcassets in Resources */,
 				BD42880E22DCAF040002A78C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		64C1786D42B253D1F44D786E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTKT/Pods-HTKT-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HTKT/Pods-HTKT-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HTKT/Pods-HTKT-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC5073E6A87B03FD1EC87961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HTKT-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BD42880122DCAF040002A78C /* Sources */ = {
@@ -300,6 +373,7 @@
 		};
 		BD42881822DCAF060002A78C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F0764F19344A1C8419B0EFC3 /* Pods-HTKT.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +392,7 @@
 		};
 		BD42881922DCAF060002A78C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0EEDAD347645A98DD1452750 /* Pods-HTKT.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
